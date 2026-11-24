@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BirlaAssist AI — B. K. Birla College, Kalyan</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Background Decorative Glow -->
+  <div class="bg-glow"></div>
+
+  <!-- Centered Main App Wrapper -->
+  <div class="app-wrapper">
+    
+    <!-- Top College Brand Header -->
+    <header class="top-header">
+      <div class="college-badge">BKB</div>
+      <div class="college-title">
+        <h1>B. K. Birla College of Arts, Science & Commerce, Kalyan</h1>
+        <p>Empowered Autonomous &bull; NAAC 'A++' Grade (CGPA 3.51) &bull; Affiliated to University of Mumbai</p>
+      </div>
+      <div class="status-pill">
+        <span class="dot"></span> BirlaAssist AI Online
+      </div>
+    </header>
+
+    <!-- Centered Modern Chatbot Card -->
+    <main id="chat-container" class="chat-card">
+      
+      <!-- Chat Sub-Header -->
+      <div class="chat-card-top">
+        <div class="assistant-info">
+          <div class="bot-logo">🎓</div>
+          <div>
+            <h2>BirlaAssist — Official Student & Admission Helpdesk</h2>
+            <span>Ask about Courses, Class 12 Cutoffs, Documents, Fees, Attendance & Placements</span>
+          </div>
+        </div>
+        <button class="clear-btn" onclick="location.reload()" title="New Chat">↻ New Chat</button>
+      </div>
+
+      <!-- Messages Area -->
+      <div id="chat-box">
+        <div class="bot-msg">
+          👋 <strong>Namaste! Welcome to B. K. Birla College, Kalyan.</strong><br><br>
+          Mi tumcha official AI Assistant aahe. Tumhi mala khalil topic buttons var click karun kinva khali type karun kontahi prashna vicharu shakta:
+          <ul style="margin: 8px 0 0 18px;">
+            <li><strong>Courses & Eligibility:</strong> B.Sc. IT, CS, BCA, Data Science, AI, BAF, BMS, B.Com, B.A.</li>
+            <li><strong>Admissions & Cutoffs:</strong> Merit percentage, MH-CET & required documents</li>
+            <li><strong>Fees & Refund Policy:</strong> Annual fees, Circular UG/412 refund rules & MahaDBT scholarships</li>
+            <li><strong>Campus & Placements:</strong> 60:40 exam pattern, 75% attendance, Youthopia fest & recruiters</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Quick Suggestion Chips -->
+      <div class="quick-section">
+        <span class="quick-label">Suggested Topics:</span>
+        <div class="quick-btns">
+          <button onclick="askQuick('All courses offered')">📚 All Courses</button>
+          <button onclick="askQuick('UG admission process and cutoffs')">📝 Admissions & Cutoffs</button>
+          <button onclick="askQuick('Admission documents required')">📄 Documents</button>
+          <button onclick="askQuick('Fee structure and refund policy')">💰 Fees & Refund</button>
+          <button onclick="askQuick('Exam pattern and 75% attendance rule')">⚖️ Exam & Attendance</button>
+          <button onclick="askQuick('Scholarships and financial aid')">🎓 Scholarships</button>
+          <button onclick="askQuick('Placements and top companies')">💼 Placements</button>
+          <button onclick="askQuick('Campus facilities, labs and Youthopia fest')">🏫 Campus & Labs</button>
+          <button onclick="askQuick('Contact number, address and nearest station')">📞 Contact & Location</button>
+        </div>
+      </div>
+
+      <!-- Bottom Input Bar -->
+      <div class="chat-input-box">
+        <input 
+          type="text" 
+          id="user-input" 
+          placeholder="Type your question here (e.g., B.Sc. IT eligibility, fees, cutoffs, documents)..." 
+          autocomplete="off"
+          onkeypress="if(event.key==='Enter') sendMessage()"
+        >
+        <button onclick="sendMessage()">Send ➤</button>
+      </div>
+
+    </main>
+
+    <!-- Bottom Project Credit -->
+    <footer class="bottom-credit">
+      Srujan Hackathon Project &bull; Official Portal: <a href="https://bkbck.edu.in/" target="_blank">bkbck.edu.in</a> &bull; Toll-Free Helpline: <strong>1800 233 0144</strong>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
